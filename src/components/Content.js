@@ -48,10 +48,10 @@ const Content = () => {
             var text = document.querySelector("h1")
             var fill = document.querySelector(".fill").clientHeight
 
-            document.querySelector("h1").textContent = Math.round(progress) + "%" 
-            document.querySelector("h1").style.color = bgColor
+            document.querySelector("h1").innerText = Math.round(progress) + "%" 
+            document.querySelector("h1").style.color = txtColor
             
-            document.querySelector(".fill").textContent = Number(progress) + "%" 
+            document.querySelector(".fill").style.height = progress + "%" 
             document.querySelector(".fill").style.backgroundColor = bgColor
 
         }
