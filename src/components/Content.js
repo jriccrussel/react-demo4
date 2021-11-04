@@ -33,27 +33,27 @@ const Content = () => {
         // }
 
         let progress = () => {
-            let windowScrollTop = document.documentElement.scrollTop
-            let docHeight = document.documentElement.offsetHeight   
-            let windowHeight = window.innerHeight
-            let progress = (windowScrollTop / (docHeight - windowHeight)) * 100
+            var windowScrollTop = document.documentElement.scrollTop
+            var docHeight = document.documentElement.offsetHeight   
+            var windowHeight = window.innerHeight
+            var progress = (windowScrollTop / (docHeight - windowHeight)) * 100
 
-            let bgColor = progress > 99 ? "#fff" : "#fff"
-            let txtColor = progress > 99 ? "#fff" : "#333"
+            var bgColor = progress > 99 ? "#fff" : "#fff"
+            var txtColor = progress > 99 ? "#fff" : "#333"
 
             // document.querySelector("h1").text(Math.round(progress) + "%").css({ color: $txtColor })
 
             // document.querySelector(".fill").text(Math.round(progress) + "%").css({ color: $bgColor })      
             
-            let text = document.querySelector("h1")
-            let fill = document.querySelector(".fill")
+            var text = document.querySelector("h1")
+            var fill = document.querySelector(".fill").clientHeight
 
-            document.querySelector("h1").innerHTML = Math.round(progress) + "%" 
+            document.querySelector("h1").textContent = Math.round(progress) + "%" 
             document.querySelector("h1").style.color = bgColor
             
-            document.querySelector(".fill").innerHTML = Math.round(progress) + "%"     
-            document.querySelector(".fill").style.color = txtColor
-            
+            document.querySelector(".fill").textContent = Number(progress) + "%" 
+            document.querySelector(".fill").style.backgroundColor = bgColor
+
         }
 
         progress()
