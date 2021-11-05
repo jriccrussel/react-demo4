@@ -1,6 +1,6 @@
 
 import { IonIcon } from '@ionic/react'
-import { add, addCircleOutline, bulbOutline } from 'ionicons/icons'
+import { add, addCircleOutline, bulbOutline, eyeOutline } from 'ionicons/icons'
 import React from 'react'
 
 const Card = () => {
@@ -8,11 +8,10 @@ const Card = () => {
         <div className="wrapper">
             <div className="card-container">
                 <div className="plus-icon">
-                    {/* <IonIcon name="add-outline"></IonIcon> */}
-                    <IonIcon icon={addCircleOutline}></IonIcon>
+                    <IonIcon icon={add}></IonIcon>
                 </div>
                 <div className="card-icon">
-                    <IonIcon icon={bulbOutline}></IonIcon>
+                    <IonIcon icon={eyeOutline}></IonIcon>
                 </div>
                 <div className="preview-text">Aquisition</div>
                 <div className="card-circle"></div>
@@ -23,11 +22,10 @@ const Card = () => {
 
             <div className="card-container">
                 <div className="plus-icon">
-                    {/* <IonIcon name="add-outline"></IonIcon> */}
-                    <IonIcon name="add-circle-outline"></IonIcon>
+                    <IonIcon icon={add}></IonIcon>
                 </div>
                 <div className="card-icon">
-                    <IonIcon name="bulb-outline"></IonIcon>
+                    <IonIcon icon={eyeOutline}></IonIcon>
                 </div>
                 <div className="preview-text">Aquisition</div>
                 <div className="card-circle"></div>
@@ -38,11 +36,10 @@ const Card = () => {
 
             <div className="card-container">
                 <div className="plus-icon">
-                    {/* <IonIcon name="add-outline"></IonIcon> */}
-                    <IonIcon name="add-circle-outline"></IonIcon>
+                    <IonIcon icon={add}></IonIcon>
                 </div>
                 <div className="card-icon">
-                    <IonIcon name="bulb-outline"></IonIcon>
+                    <IonIcon icon={eyeOutline}></IonIcon>
                 </div>
                 <div className="preview-text">Aquisition</div>
                 <div className="card-circle"></div>
