@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { TweenLite } from 'gsap/gsap-core'
+import Card from './Card'
 
 const Content = () => {
 
@@ -76,6 +77,7 @@ const Content = () => {
                         amet fugiat rerum distinctio placeat ratione et! Adipisci voluptates est nulla,
                         nostrum nesciunt nisi placeat recusandae! Consequatur, rem.
                     </p>
+                    <Card />
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, minima accusamus
                         odit voluptas cumque et maxime. Non nam minima tempora nemo assumenda fugit
@@ -83,6 +85,7 @@ const Content = () => {
                         voluptatibus quaerat nulla, dolorem sunt maiores, itaque illum nam neque!
                         Inventore optio repellat fugit vel odit ea.
                     </p>
+                    <Card />
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit inventore quam
                         est, illo rem voluptatem neque incidunt quos eos? Quis ex minima quam autem et
